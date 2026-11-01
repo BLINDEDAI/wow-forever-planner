@@ -1977,3 +1977,150 @@ button:disabled {
   color: var(--muted);
   font-size: 0.85rem;
 }
+
+/* Addons */
+.addons__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.addons__card {
+  padding: 12px 14px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--edge);
+  border-radius: 10px;
+}
+
+.addons__card h3 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px;
+  margin: 0 0 2px;
+  font-size: 1rem;
+}
+
+.addons__card h3 a {
+  color: var(--gold);
+  text-decoration: none;
+}
+
+.addons__ver {
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+.addons__role {
+  margin: 0 0 8px;
+  color: var(--silver);
+  font-size: 0.85rem;
+}
+
+.addons__card ul {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--muted);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.addons__profiles {
+  display: grid;
+  gap: 8px;
+  margin: 0 0 8px;
+  padding: 0;
+  list-style: none;
+}
+
+.addons__profiles li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 10px 14px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--edge);
+  border-left: 3px solid var(--gold);
+  border-radius: 10px;
+}
+
+.addons__profiles p {
+  margin: 2px 0 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.addons__profiles .btn {
+  flex: none;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.addons__note {
+  margin: 0 0 18px;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.addons__count {
+  margin-left: 10px;
+  font-family: var(--font-body, system-ui, sans-serif);
+  color: var(--gold);
+  font-size: 0.8rem;
+}
+
+.addons__steps {
+  display: grid;
+  gap: 6px;
+  margin: 0 0 18px;
+  padding: 0;
+  list-style: none;
+}
+
+.addons__steps label {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 10px 14px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--edge);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.addons__steps input {
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  flex: none;
+  accent-color: var(--gold);
+}
+
+.addons__steps strong {
+  display: block;
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+.addons__steps em {
+  display: block;
+  margin-top: 2px;
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-style: normal;
+}
+
+.addons__step--done strong {
+  color: var(--muted);
+  text-decoration: line-through;
+}
+
+@media (max-width: 640px) {
+  .addons__profiles li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

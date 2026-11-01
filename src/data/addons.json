@@ -1,0 +1,149 @@
+{
+  "source": "Broog, \"The ONLY 2 Addons You SHOULD Be Using Instead of 40\" (youtube.com/watch?v=Gf8Z6xgV74o, 21 oct 2026) y sus guías de Ellesmere UI y Naowh Forever; versiones y comandos de CurseForge y del GitHub de Naowh Forever (31 oct 2026). Opinión del autor sobre la beta, no datos oficiales.",
+  "video": "https://www.youtube.com/watch?v=Gf8Z6xgV74o",
+  "intro": "Ellesmere UI y Naowh Forever son gratis, ligeros (unos 120 MB de memoria entre los dos, según el autor) y juntos sustituyen a más de 40 addons. La clave para no pasar horas configurando es importar los perfiles ya preparados, que están hechos para que los dos no se pisen.",
+  "addons": [
+    {
+      "id": "eui",
+      "name": "Ellesmere UI",
+      "version": "9.7.2",
+      "date": "31 oct 2026",
+      "url": "https://www.curseforge.com/wow/addons/ellesmereui",
+      "role": "Toda la interfaz",
+      "covers": [
+        "Barras de acción (Bartender)",
+        "Placas de nombre (Plater)",
+        "Marcos de unidad, de banda y de grupo (Grid2, VuhDo)",
+        "Gestor de reutilizaciones, barras de recurso y de lanzamiento",
+        "Medidor de daño (Details), minimapa, chat, bolsas",
+        "Mover paneles de Blizzard (Move Anything)",
+        "Autobotín y mejoras de calidad de vida"
+      ]
+    },
+    {
+      "id": "nf",
+      "name": "Naowh Forever",
+      "version": "1.1.53",
+      "date": "31 oct 2026",
+      "url": "https://www.curseforge.com/wow/addons/naowhforever",
+      "role": "Utilidades de Forever",
+      "covers": [
+        "Marcador de ruta y pines de mapa (TomTom, Leatrix Maps, GatherMate)",
+        "Misiones en el mapa (Questie)",
+        "Barra de experiencia (Forever XP Bar)",
+        "Diario de mazmorras y lista de mejor equipo (BiS)",
+        "Planificador de entrenamiento: qué hechizos te faltan y cuánto oro necesitas",
+        "Descubrimientos: libros, sacos de dormir, bichos raros",
+        "Profesiones y precios de la casa de subastas (TSM, Auctionator)",
+        "Rastreador de instancias (Nova Instance Tracker)"
+      ]
+    }
+  ],
+  "profiles": [
+    {
+      "id": "eui-profile",
+      "name": "Perfil de Ellesmere UI",
+      "text": "El principal: es el de compatibilidad con Naowh Forever. Cópialo entero y pégalo en la importación de Ellesmere UI.",
+      "url": "https://raw.githubusercontent.com/broogWoW/WoW-UI/main/%5BEUI%20Profile%5DEUI%2BNF"
+    },
+    {
+      "id": "nf-profile",
+      "name": "Perfil de Naowh Forever",
+      "text": "El gemelo del anterior: desactiva lo que Ellesmere UI ya hace. Empieza por NFPROFILE1.",
+      "url": "https://raw.githubusercontent.com/broogWoW/WoW-UI/main/%5BNF%20Profile%5DEUI%2BNF"
+    },
+    {
+      "id": "editmode",
+      "name": "Diseño del modo edición de Blizzard (opcional)",
+      "text": "Solo posiciones de paneles de Blizzard. Si ya colocas todo con Ellesmere UI, no lo necesitas.",
+      "url": "https://raw.githubusercontent.com/broogWoW/WoW-UI/main/EditModeUIBroog"
+    }
+  ],
+  "profilesRepo": "https://github.com/broogWoW/WoW-UI",
+  "steps": [
+    {
+      "id": "install",
+      "title": "Instalar los dos addons",
+      "text": "Desde CurseForge, eligiendo la versión Forever. Naowh Forever también se puede bajar de su GitHub (zip) y extraer en la carpeta Interface\\AddOns de Forever."
+    },
+    {
+      "id": "login",
+      "title": "Entrar al juego y comprobar que están activados",
+      "text": "En la pantalla de personajes, abre Addons y marca los dos. Si ya estás dentro, escribe /reload."
+    },
+    {
+      "id": "scale",
+      "title": "Fijar la escala de la interfaz antes de nada",
+      "text": "Es lo primero que hace el autor: si colocas cosas y cambias la escala después, tienes que recolocarlo todo dos veces."
+    },
+    {
+      "id": "eui-import",
+      "title": "Importar el perfil de Ellesmere UI",
+      "text": "Abre los ajustes de Ellesmere UI, busca la importación de perfiles y pega la cadena. No he podido comprobar la ruta exacta del botón: no está documentada y el juego no está abierto todavía."
+    },
+    {
+      "id": "nf-import",
+      "title": "Importar el perfil de Naowh Forever",
+      "text": "Escribe /nf y mira en Profiles. Sus ajustes viven ahí. Si el perfil no entra, /nf setup repite la configuración inicial (perfil, aspecto y módulos)."
+    },
+    {
+      "id": "reload",
+      "title": "Recargar y revisar",
+      "text": "Escribe /reload. Comprueba que no haya dos barras de experiencia, dos minimapas ni dos medidores de daño, y que veas tus barras de acción, tus marcos y las placas de nombre."
+    },
+    {
+      "id": "priest",
+      "title": "Ajustar lo que es de Priest",
+      "text": "El autor graba con otra clase (sus recordatorios son de Ice Armor). Revisa los recordatorios de buffs para tener Power Word: Fortitude e Inner Fire, y coloca tus hechizos en las barras."
+    },
+    {
+      "id": "backup",
+      "title": "Exportar tus perfiles a un archivo de texto",
+      "text": "Cuando todo esté a tu gusto, exporta los dos y guárdalos en el bloc de notas. Así reinstalar o jugar en otro PC te lleva dos minutos."
+    }
+  ],
+  "split": {
+    "title": "Qué hace cada uno cuando usas los dos",
+    "eui": [
+      "Barras de acción (en Naowh Forever están desactivadas)",
+      "Placas de nombre, marcos de unidad, de banda y de grupo",
+      "Gestor de reutilizaciones, barras de recurso y de lanzamiento",
+      "Medidor de daño, medidor de amenaza, minimapa, chat y bolsas",
+      "Autobotín y mejoras de calidad de vida",
+      "Círculo del cursor y recordatorios de hoguera"
+    ],
+    "nf": [
+      "Marcador de ruta (waypoint pin), pines de mapa y misiones en el mapa",
+      "Barra de experiencia con el tiempo jugado en cada nivel",
+      "Diario de mazmorras, lista de mejor equipo (BiS) y planificador de entrenamiento",
+      "Descubrimientos, profesiones y precios de la casa de subastas",
+      "Marcador de basura, destellos en objetos de misión y recordatorios de vuelo",
+      "Rastreador de instancias, rutas del mapa, macros e inspección de grupo",
+      "Recordatorios de buffs, consumibles y cambio automático de equipo al montar"
+    ]
+  },
+  "tips": [
+    {
+      "title": "Planificador de entrenamiento",
+      "text": "/nftraining te dice qué te falta aprender a tu nivel y cuánto oro necesitas hasta el 60. Complementa la lista \"Hechizos: qué comprar\" de esta página."
+    },
+    {
+      "title": "Cuidado con \"actualizar barras\"",
+      "text": "Naowh Forever avisa de los hechizos de rango bajo que tienes en las barras y ofrece cambiarlos por el rango más alto. Si vas a sanar con rangos bajos, no pulses esa opción."
+    },
+    {
+      "title": "Macros",
+      "text": "/nfmacros abre su biblioteca de macros inteligentes, útil para la macro de un solo botón que cura o ataca según el objetivo."
+    },
+    {
+      "title": "Equipo",
+      "text": "/nfbis y /nfjournal sustituyen a GearQuest Forever, que según el autor ocupa unos 400 MB de memoria."
+    }
+  ],
+  "caveats": [
+    "Los perfiles se exportaron en la beta con Naowh Forever 1.1.37 y el 20-22 de octubre; hoy están las versiones 1.1.53 y 9.7.2. Nadie puede probarlos hasta que el juego abra el 4 de noviembre, así que puede haber pequeños desajustes.",
+    "Importar un perfil sobrescribe lo que tengas configurado. Si ya has personalizado algo, expórtalo antes.",
+    "Las cadenas de perfil solo contienen ajustes: las he descodificado y no llevan scripts ni enlaces. Aun así son de un tercero, así que cópialas siempre del repositorio de su autor.",
+    "Los subtítulos del vídeo no recogen la lista que enseña en pantalla de qué activar en cada addon; lo de arriba sale de lo que dice en voz alta."
+  ]
+}

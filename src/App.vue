@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
+import AddonsPanel from './components/AddonsPanel.vue'
 import BonusPanel from './components/BonusPanel.vue'
 import GearPanel from './components/GearPanel.vue'
 import LevelTimeline from './components/LevelTimeline.vue'
@@ -160,6 +161,8 @@ function confirmReset() {
     <BonusPanel />
 
     <SpellShopPanel />
+
+    <AddonsPanel />
 
     <footer class="credits">
       Talentos y textos: <a href="https://foreverdb.net" target="_blank" rel="noopener noreferrer">ForeverDB</a>.
