@@ -1,0 +1,117 @@
+{
+  "source": "AwesomeSP, \"[WoW Forever] Priest Leveling Guide 1-60\" (youtube.com/watch?v=wVU59PWpeMc): varitas, hitos de talentos y rotación por nivel; opinión del autor sobre la beta, no datos oficiales",
+  "wands": [
+    {
+      "level": 6,
+      "text": "Primera varita: tenla sí o sí a nivel 6. Es el gran salto de poder de los primeros niveles; seguir con el arma o solo con Smite es lo peor que puedes hacer.",
+      "details": [
+        "Si el servidor acaba de abrir y nadie vende varitas, hay tres caminos para fabricarla:",
+        "Pieles y peletería: no exige nivel; despellejas, crafteas pecheras y las desencantas.",
+        "Sastrería: necesita mucho lino; en las zonas iniciales cae algo, pero no suficiente.",
+        "Minería y herrería (el favorito del autor): desencantar un arma de nivel 5 da la esencia mágica menor un 75-80% de las veces; una prenda de peletería o sastrería, solo un 20-25%.",
+        "En los tres casos aprende Encantamiento con su entrenador y sube la habilidad a 20 antes de desencantar (cuesta 10 de cobre por punto; compra una vara de cobre y los materiales).",
+        "Si empiezas un día tarde, ya habrá varitas en la casa de subastas: compra cualquiera.",
+        "Alternativa de Toleduck para la varita menor, que se lleva desde el nivel 5 (la de nivel 1 no merece la pena, hay que ir a la segunda zona): reúne 20 de mineral de cobre y 20 de piedra bruta; fundes el cobre y entrenas herrería; haces 8 varas de cobre; gastas la piedra bruta hasta 25 de herrería; con 4 de lino haces 2 espadas cortas de cobre; abandonas herrería, aprendes Encantamiento y desencantas ambas; subes Encantamiento a 10 con materiales de vendedor y fabricas la varita menor.",
+        "Ojo: AwesomeSP pide 20 de Encantamiento antes de desencantar y Toleduck dice 10. No sé cuál es el requisito real, así que mira lo que exige la receta en el juego."
+      ]
+    },
+    {
+      "level": 13,
+      "text": "Varita mágica mayor: una mejora enorme sobre la menor.",
+      "details": [
+        "Si la fabricas tú, necesita 70 de Encantamiento. Se llega crafteando más piezas de peletería o sastrería (piernas, guantes), desencantándolas (suben Encantamiento) y encantando pecheras o brazales, o fabricando más varitas con polvo extraño o esencia mágica menor.",
+        "Subiendo de nivel desde el primer día se puede tener hacia el nivel 12-13. Si empiezas más tarde, cómprala a otro jugador o en la casa de subastas.",
+        "Alianza (como tu gnomo): según el autor hay una varita de misión parecida, algo mejor, que no exige craftear. El nombre no se entiende en los subtítulos, así que búscala en el juego."
+      ]
+    },
+    {
+      "level": 18,
+      "text": "Gravestone Scepter (unos 29 de daño por segundo), de una misión de Blackfathom Deeps: te lleva casi hasta el nivel 30.",
+      "details": [
+        "Según AwesomeSP la misión se puede hacer desde el nivel 18 en Horda y desde el 20 en Alianza (tu gnomo); Toleduck dice que se recoge a 18. En la práctica entrar en un grupo es realista hacia 22-24.",
+        "Merece la pena repetir la mazmorra para conseguirla pronto: Toleduck cura Blackfathom Deeps ya a nivel 18, aunque lo difícil es que te acepten en un grupo.",
+        "La diapositiva de AwesomeSP del nivel 36 muestra esta varita con 29,0 de daño por segundo."
+      ]
+    },
+    { "level": 40, "text": "Quita la varita de la rotación: queda solo por sus estadísticas. Toleduck recomienda varitas con daño de Sombras a partir de aquí." }
+  ],
+  "talents": [
+    { "level": 10, "text": "Wand Specialization, primer punto (13% más de daño con varita)." },
+    { "level": 11, "text": "Wand Specialization 2/2 (25% más de daño con varita)." },
+    { "level": 24, "text": "Ruta de Disciplina: Inner Focus y Meditation 3/3, con lo que ya puedes hacer multi-pull." },
+    { "level": 28, "text": "Spirit Tap 5/5." },
+    { "level": 33, "text": "Talento de Mind Flay; con Devouring Contagion (2 puntos) el Plague se contagia." },
+    { "level": 40, "text": "Respec a Shadow y Shadowform: tu mayor pico de poder." },
+    { "level": 54, "text": "Meditation e Inner Focus completos: maná casi ilimitado." }
+  ],
+  "rotationUpdates": [
+    { "level": 1, "text": "Solo tienes Smite: uno o dos lanzamientos y rematas con el arma." },
+    { "level": 4, "text": "Primer salto: Pain y el arma mejorada de la misión inicial." },
+    { "level": 6, "text": "Con varita: escudo, Pain y varita." },
+    { "level": 22, "text": "Mind Blast rango 3 empieza a servir (si no tienes la varita de mazmorra)." },
+    { "level": 24, "text": "Primeros multi-pull con la ruta de Disciplina." },
+    { "level": 28, "text": "Mind Blast obligatorio en cada pull; Psychic Scream asusta a 3 mobs." },
+    { "level": 33, "text": "Rotación de 3 mobs con Plague contagioso (si tomaste Devouring Contagion)." },
+    { "level": 36, "text": "Mind Flay rango 3: pasas a la rotación con Mind Flay, alternándola con varita para recuperar maná." },
+    { "level": 40, "text": "Sin varita: Shadowform y rotación de 3 mobs." }
+  ],
+  "rotations": [
+    {
+      "from": 1, "to": 3,
+      "rows": [
+        { "label": "Un objetivo", "steps": [ { "spell": "smite", "times": 2 }, { "spell": "melee" } ] }
+      ]
+    },
+    {
+      "from": 4, "to": 5,
+      "rows": [
+        { "label": "Un objetivo", "steps": [ { "spell": "smite", "times": 2 }, { "spell": "shadow-word-pain" }, { "spell": "melee" } ] },
+        { "label": "Dos mobs", "sub": "uno tras otro", "steps": [ { "spell": "smite", "times": 2 }, { "spell": "shadow-word-pain" }, { "spell": "melee" }, { "spell": "smite", "times": 2 }, { "spell": "shadow-word-pain" }, { "spell": "melee" } ] }
+      ]
+    },
+    {
+      "from": 6, "to": 21,
+      "rows": [
+        { "label": "Un objetivo", "steps": [ { "spell": "power-word-shield" }, { "spell": "shadow-word-pain" }, { "spell": "wand" } ] }
+      ]
+    },
+    {
+      "from": 22, "to": 27,
+      "rows": [
+        { "label": "Un objetivo", "sub": "Mind Blast opcional con la varita de mazmorra", "steps": [ { "spell": "power-word-shield" }, { "spell": "mind-blast" }, { "spell": "shadow-word-pain" }, { "spell": "wand" } ] },
+        { "label": "Varios mobs", "sub": "Disciplina, desde el 24", "steps": [ { "spell": "power-word-shield" }, { "spell": "shadow-word-pain", "times": 3 }, { "spell": "wand", "times": 2 } ] }
+      ]
+    },
+    {
+      "from": 28, "to": 31,
+      "rows": [
+        { "label": "Un objetivo", "steps": [ { "spell": "power-word-shield" }, { "spell": "mind-blast" }, { "spell": "shadow-word-pain" }, { "spell": "wand" } ] },
+        { "label": "Varios mobs", "sub": "Disciplina", "steps": [ { "spell": "power-word-shield" }, { "spell": "shadow-word-pain", "times": 3 }, { "spell": "wand", "times": 2 } ] }
+      ]
+    },
+    {
+      "from": 32, "to": 35,
+      "rows": [
+        { "label": "Un objetivo", "steps": [ { "spell": "power-word-shield" }, { "spell": "mind-blast" }, { "spell": "shadow-word-pain" }, { "spell": "wand" }, { "spell": "shadow-word-death" } ] },
+        { "label": "Varios mobs", "sub": "Disciplina", "steps": [ { "spell": "power-word-shield" }, { "spell": "shadow-word-pain", "times": 3 }, { "spell": "wand", "times": 2 }, { "spell": "shadow-word-death" } ] },
+        { "label": "Varios mobs", "sub": "Shadow, con Devouring Contagion", "steps": [ { "spell": "power-word-shield" }, { "spell": "mind-blast" }, { "spell": "shadow-word-pain" }, { "spell": "devouring-plague" }, { "spell": "shadow-word-pain", "times": 2 }, { "spell": "wand" }, { "spell": "shadow-word-death" } ] }
+      ]
+    },
+    {
+      "from": 36, "to": 39,
+      "rows": [
+        { "label": "Un objetivo", "sub": "con maná", "steps": [ { "spell": "power-word-shield" }, { "spell": "mind-blast" }, { "spell": "shadow-word-pain" }, { "spell": "mind-flay", "times": 2 }, { "spell": "shadow-word-death" } ] },
+        { "label": "Un objetivo", "sub": "poco maná", "steps": [ { "spell": "power-word-shield" }, { "spell": "mind-blast" }, { "spell": "shadow-word-pain" }, { "spell": "wand", "times": 2 }, { "spell": "shadow-word-death" } ] },
+        { "label": "Varios mobs", "steps": [ { "spell": "power-word-shield" }, { "spell": "mind-blast" }, { "spell": "shadow-word-pain", "times": 3 }, { "spell": "wand", "times": 2 }, { "spell": "shadow-word-death" } ] },
+        { "label": "Varios mobs", "sub": "Shadow", "steps": [ { "spell": "power-word-shield" }, { "spell": "mind-blast" }, { "spell": "shadow-word-pain" }, { "spell": "devouring-plague" }, { "spell": "shadow-word-pain", "times": 2 }, { "spell": "wand" }, { "spell": "shadow-word-death" } ] }
+      ]
+    },
+    {
+      "from": 40, "to": 60,
+      "rows": [
+        { "label": "Un objetivo", "sub": "sin varita", "steps": [ { "spell": "power-word-shield" }, { "spell": "mind-blast" }, { "spell": "shadow-word-pain" }, { "spell": "devouring-plague" }, { "spell": "mind-flay" }, { "spell": "shadow-word-death" } ] },
+        { "label": "Tres mobs", "sub": "Pain a los otros dos antes de volver al primero", "steps": [ { "spell": "power-word-shield" }, { "spell": "mind-blast" }, { "spell": "shadow-word-pain" }, { "spell": "devouring-plague" }, { "spell": "shadow-word-pain", "times": 2 }, { "spell": "mind-flay" }, { "spell": "shadow-word-death" } ] }
+      ]
+    }
+  ]
+}

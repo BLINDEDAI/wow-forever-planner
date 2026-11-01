@@ -1,0 +1,287 @@
+{
+  "source": "AwesomeSP, \"[WoW Forever] Priest Leveling Guide 1-60\" (youtube.com/watch?v=wVU59PWpeMc), sección Bonus (desde 2:01:39); opinión del autor sobre la beta, no datos oficiales. Valores de Legacy de talentsforever.com (CC BY 4.0). Consejos de sanación con rangos bajos de Toleduck (youtube.com/watch?v=bNPJLjob1js, 29 Oct 2026).",
+  "video": "https://www.youtube.com/watch?v=wVU59PWpeMc",
+  "video2": "https://www.youtube.com/watch?v=bNPJLjob1js",
+  "dungeon": {
+    "heal": {
+      "title": "Sanar",
+      "rows": [
+        {
+          "label": "Sanación principal",
+          "groups": [
+            {
+              "items": [
+                {
+                  "name": "Lesser Heal",
+                  "icon": "spell_holy_lesserheal"
+                },
+                {
+                  "name": "Heal",
+                  "icon": "spell_holy_heal"
+                },
+                {
+                  "name": "Greater Heal",
+                  "icon": "spell_holy_greaterheal"
+                }
+              ]
+            },
+            {
+              "items": [
+                {
+                  "name": "Renew",
+                  "icon": "spell_holy_renew"
+                }
+              ],
+              "caption": "Después"
+            }
+          ]
+        },
+        {
+          "label": "Hasta el 40",
+          "groups": [
+            {
+              "items": [
+                {
+                  "name": "Lesser Heal (rango 3)",
+                  "icon": "spell_holy_lesserheal"
+                },
+                {
+                  "name": "Renew (rango 1)",
+                  "icon": "spell_holy_renew"
+                }
+              ],
+              "caption": "Rangos bajos: casi no cuestan maná"
+            }
+          ]
+        },
+        {
+          "label": "Emergencia",
+          "groups": [
+            {
+              "items": [
+                {
+                  "name": "Flash Heal",
+                  "icon": "spell_holy_flashheal"
+                },
+                {
+                  "name": "Power Word: Shield",
+                  "icon": "spell_holy_powerwordshield"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Entre sanaciones",
+          "groups": [
+            {
+              "items": [
+                {
+                  "name": "Shadow Word: Pain",
+                  "icon": "spell_shadow_shadowwordpain"
+                },
+                {
+                  "name": "Varita",
+                  "icon": "inv_wand_01"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Shadow",
+          "accent": true,
+          "groups": [
+            {
+              "items": [
+                {
+                  "name": "Spirit Tap",
+                  "icon": "spell_shadow_requiem",
+                  "caption": "Spirit Tap"
+                },
+                {
+                  "name": "Vampiric Embrace",
+                  "icon": "spell_shadow_unsummonbuilding",
+                  "caption": "Vampiric Embrace"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "dps": {
+      "title": "Daño",
+      "rows": [
+        {
+          "label": "Prioridad",
+          "groups": [
+            {
+              "items": [
+                {
+                  "name": "Shadow Word: Pain",
+                  "icon": "spell_shadow_shadowwordpain"
+                }
+              ]
+            },
+            {
+              "items": [
+                {
+                  "name": "Devouring Plague",
+                  "icon": "spell_shadow_blackplague"
+                }
+              ],
+              "caption": "Objetivo que va a morir"
+            },
+            {
+              "items": [
+                {
+                  "name": "Mind Blast",
+                  "icon": "spell_shadow_unholyfrenzy"
+                },
+                {
+                  "name": "Shadow Word: Death",
+                  "iconId": "136149"
+                }
+              ],
+              "caption": "¡Amenaza!",
+              "warn": true
+            },
+            {
+              "items": [
+                {
+                  "name": "Mind Flay",
+                  "icon": "spell_shadow_siphonmana"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "stats": {
+    "pve": {
+      "label": "Servidor PvE",
+      "order": [
+        "power",
+        "spirit",
+        "intellect",
+        "stamina"
+      ]
+    },
+    "pvp": {
+      "label": "Servidor PvP",
+      "order": [
+        "power",
+        "spirit",
+        "stamina",
+        "intellect"
+      ]
+    },
+    "items": {
+      "power": {
+        "name": "Poder de hechizo / daño de Sombras",
+        "icon": "inv_staff_13"
+      },
+      "spirit": {
+        "name": "Espíritu",
+        "icon": "spell_holy_divinespirit"
+      },
+      "intellect": {
+        "name": "Intelecto",
+        "icon": "spell_holy_magicalsentry"
+      },
+      "stamina": {
+        "name": "Aguante",
+        "icon": "spell_holy_wordfortitude"
+      }
+    }
+  },
+  "sections": [
+    {
+      "id": "dungeons",
+      "title": "Mazmorras hasta el 40",
+      "items": [
+        "Lo normal es que sanes todas las mazmorras al menos hasta el nivel 40. El autor lo ve como una ventaja, no como un castigo: es relajado y, como casi todos juegan clases físicas, te llevas el equipo de tela y de lanzador de hechizos."
+      ]
+    },
+    {
+      "id": "healing",
+      "title": "Cómo sanar",
+      "items": [
+        "Combina tu sanación más larga (Lesser Heal rango 3, Heal rango 1 o 2, o Greater Heal) con un Renew: es lo que más sana y hace que la regla de los 5 segundos del maná empiece cuanto antes.",
+        "Por ejemplo: el tanque baja al 70%, empiezas a lanzar; al terminar sueltas Renew y vuelves a lo tuyo.",
+        "Flash Heal (desde el nivel 20) y el escudo solo para emergencias: gastan mucho maná, pero son rápidos, y es mejor eso que dejar morir a alguien."
+      ]
+    },
+    {
+      "id": "downrank",
+      "title": "Sanar con rangos bajos (hasta el 40)",
+      "items": [
+        "Deja en la barra los rangos bajos. Lesser Heal rango 3 (nivel 10) escala al 71,4% de tu poder de hechizo y cuesta 75 de maná; Heal rango 3 (nivel 28) cuesta 255.",
+        "Renew rango 1 cuesta 30 de maná; el rango 4 (nivel 26) cuesta 140 para sanar 160. Con el equipo nuevo, el rango 1 sana bastante más de lo que dice su tooltip.",
+        "Aprovecha la regla de los 5 segundos: con Prayer of Mending rebotando y Renew en cuatro compañeros no hace falta sanar a quien está al 60%; espera a recuperar maná.",
+        "El escudo y Flash Heal, solo para picos de daño. El escudo sobre el tanque antes del pull evita, según el autor, que le hagan daze.",
+        "Usa mouseover (ya viene en el interfaz) para la varita y las disipaciones. Antes del nivel 36 solo disipas un efecto cada vez, así que elige el momento."
+      ]
+    },
+    {
+      "id": "idle",
+      "title": "Cuando no estás sanando",
+      "items": [
+        "Dos opciones: usar la varita (sin riesgo y mejor que no hacer nada) o hacer más daño con Pain, sobre todo en pulls grandes.",
+        "Aviso: si abusas de Pain y te quedas al 30% de maná y el grupo muere, pierdes más tiempo del que ahorras recorriendo hasta el cadáver. Si no confías en el grupo, solo varita."
+      ]
+    },
+    {
+      "id": "vampiric-spirit-tap",
+      "title": "Combo Vampiric Embrace + Spirit Tap",
+      "items": [
+        "Con más de 16 puntos en Shadow (Vampiric Embrace desbloqueado), lánzalo en cuanto esté disponible sobre el siguiente enemigo que vaya a morir. No hace falta ni dañarlo.",
+        "Vampiric Embrace cuesta 40 de maná a cualquier nivel, y a cambio consigues un Spirit Tap completo cuando muere.",
+        "Pasado el nivel 42 también puedes \"robar\" el Spirit Tap con Shadow Word: Death, que cuesta algo más de maná.",
+        "El autor cree que con esto quizá puedas sanar bastantes mazmorras tras el 40 siendo Shadow puro."
+      ]
+    },
+    {
+      "id": "dps",
+      "title": "Como daño",
+      "items": [
+        "Pain a todo, salvo a lo que vaya a morir en menos de unos 6 segundos.",
+        "Devouring Plague al objetivo con menos vida: se contagia al morir.",
+        "Después, Mind Blast y Death. Mind Blast genera más amenaza; si te da problemas, usa Fade, que además es tu relleno."
+      ]
+    },
+    {
+      "id": "stats",
+      "title": "Estadísticas",
+      "items": [
+        "Primero daño de hechizo y daño de Sombras: es tu velocidad de subida y también lo que te sana con Devouring Plague y Vampiric Embrace. Sobre todo a partir del nivel 40 con Shadowform.",
+        "Segundo, siempre espíritu: entra en Spirit Tap y en Meditation, así que no seas tímido.",
+        "En servidor PvE, intelecto en tercer lugar; el aguante casi no hace falta, porque el buff de sacerdote ya te da mucho.",
+        "En servidor PvP, lo mismo, con aguante tercero y intelecto último. Algunos prefieren aguante antes que espíritu, pero él no sacrificaría la regeneración por algo de vida."
+      ]
+    }
+  ],
+  "legacy": {
+    "title": "Talentos de Legacy",
+    "intro": "Se ganan con retos en tu cuenta y todos tus personajes reciben los mismos puntos: 16 al lanzamiento. El autor recomienda estos dos para empezar.",
+    "perks": [
+      {
+        "name": "Thrill of Adventure",
+        "icon": "ability_hunter_huntervswild",
+        "advice": "Apunta a 3 puntos: \"completamente roto\" y encaja con Spirit Tap y Meditation.",
+        "text": "Al dar el golpe de gracia a un enemigo no trivial recuperas vida y maná máximos durante 10 seg: un 1% por rango, hasta un 5% con 5 rangos (3% con 3 puntos).",
+        "warning": "No funciona en mazmorras, bandas ni campos de batalla; es para subir en solitario."
+      },
+      {
+        "name": "The Quick and the Dead",
+        "icon": "spell_shadow_deadofnight",
+        "advice": "Con 1 punto basta para rebufar a todo el grupo gratis tras un wipe.",
+        "text": "Tras ser resucitado, tus hechizos de ayuda no cuestan recursos durante 1 min (2 min con 2 puntos), o hasta que entres en combate. Además aumenta tu velocidad de movimiento como fantasma un 5% (10% con 2 puntos).",
+        "warning": "El autor avisó de que, al grabar el vídeo, Shadow Protection no se beneficiaba, pero sí aguante y espíritu."
+      }
+    ]
+  }
+}

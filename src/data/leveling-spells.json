@@ -1,0 +1,367 @@
+{
+ "source": "talentsforever.com export/priest.json (CC BY 4.0), WoW Forever beta client build 1.60.1.70630",
+ "spells": [
+  {
+   "id": "smite",
+   "name": "Smite",
+   "icon": "spell_holy_holysmite",
+   "kind": "damage",
+   "ranks": [
+    {
+     "rank": 1,
+     "level": 1,
+     "effect": 15,
+     "mana": 20
+    },
+    {
+     "rank": 2,
+     "level": 6,
+     "effect": 28,
+     "mana": 30
+    },
+    {
+     "rank": 3,
+     "level": 14,
+     "effect": 47,
+     "mana": 60
+    },
+    {
+     "rank": 4,
+     "level": 22,
+     "effect": 63,
+     "mana": 95
+    },
+    {
+     "rank": 5,
+     "level": 30,
+     "effect": 86,
+     "mana": 140
+    },
+    {
+     "rank": 6,
+     "level": 38,
+     "effect": 99,
+     "mana": 185
+    },
+    {
+     "rank": 7,
+     "level": 46,
+     "effect": 131,
+     "mana": 230
+    },
+    {
+     "rank": 8,
+     "level": 54,
+     "effect": 176,
+     "mana": 280
+    }
+   ]
+  },
+  {
+   "id": "power-word-shield",
+   "name": "Power Word: Shield",
+   "icon": "spell_holy_powerwordshield",
+   "kind": "absorb",
+   "ranks": [
+    {
+     "rank": 1,
+     "level": 6,
+     "effect": 48,
+     "mana": 45
+    },
+    {
+     "rank": 2,
+     "level": 12,
+     "effect": 92,
+     "mana": 80
+    },
+    {
+     "rank": 3,
+     "level": 18,
+     "effect": 162,
+     "mana": 130
+    },
+    {
+     "rank": 4,
+     "level": 24,
+     "effect": 236,
+     "mana": 175
+    },
+    {
+     "rank": 5,
+     "level": 30,
+     "effect": 302,
+     "mana": 210
+    },
+    {
+     "rank": 6,
+     "level": 36,
+     "effect": 381,
+     "mana": 250
+    },
+    {
+     "rank": 7,
+     "level": 42,
+     "effect": 485,
+     "mana": 300
+    },
+    {
+     "rank": 8,
+     "level": 48,
+     "effect": 608,
+     "mana": 355
+    },
+    {
+     "rank": 9,
+     "level": 54,
+     "effect": 768,
+     "mana": 425
+    },
+    {
+     "rank": 10,
+     "level": 60,
+     "effect": 928,
+     "mana": 500
+    }
+   ]
+  },
+  {
+   "id": "shadow-word-pain",
+   "name": "Shadow Word: Pain",
+   "icon": "spell_shadow_shadowwordpain",
+   "kind": "damage-over-time",
+   "ranks": [
+    {
+     "rank": 1,
+     "level": 4,
+     "effect": 30,
+     "mana": 25
+    },
+    {
+     "rank": 2,
+     "level": 10,
+     "effect": 60,
+     "mana": 50
+    },
+    {
+     "rank": 3,
+     "level": 18,
+     "effect": 108,
+     "mana": 95
+    },
+    {
+     "rank": 4,
+     "level": 26,
+     "effect": 180,
+     "mana": 155
+    },
+    {
+     "rank": 5,
+     "level": 34,
+     "effect": 288,
+     "mana": 230
+    },
+    {
+     "rank": 6,
+     "level": 42,
+     "effect": 426,
+     "mana": 305
+    },
+    {
+     "rank": 7,
+     "level": 50,
+     "effect": 582,
+     "mana": 385
+    },
+    {
+     "rank": 8,
+     "level": 58,
+     "effect": 762,
+     "mana": 470
+    }
+   ]
+  },
+  {
+   "id": "mind-blast",
+   "name": "Mind Blast",
+   "icon": "spell_shadow_unholyfrenzy",
+   "kind": "damage",
+   "ranks": [
+    {
+     "rank": 1,
+     "level": 10,
+     "effect": 42,
+     "mana": 50
+    },
+    {
+     "rank": 2,
+     "level": 16,
+     "effect": 72,
+     "mana": 80
+    },
+    {
+     "rank": 3,
+     "level": 22,
+     "effect": 106,
+     "mana": 110
+    },
+    {
+     "rank": 4,
+     "level": 28,
+     "effect": 158,
+     "mana": 150
+    },
+    {
+     "rank": 5,
+     "level": 34,
+     "effect": 204,
+     "mana": 185
+    },
+    {
+     "rank": 6,
+     "level": 40,
+     "effect": 267,
+     "mana": 225
+    },
+    {
+     "rank": 7,
+     "level": 46,
+     "effect": 334,
+     "mana": 265
+    },
+    {
+     "rank": 8,
+     "level": 52,
+     "effect": 417,
+     "mana": 310
+    },
+    {
+     "rank": 9,
+     "level": 58,
+     "effect": 490,
+     "mana": 350
+    }
+   ]
+  },
+  {
+   "id": "devouring-plague",
+   "name": "Devouring Plague",
+   "icon": "spell_shadow_blackplague",
+   "kind": "damage-over-time",
+   "ranks": [
+    {
+     "rank": 1,
+     "level": 20,
+     "effect": 128,
+     "mana": 215
+    },
+    {
+     "rank": 2,
+     "level": 28,
+     "effect": 232,
+     "mana": 350
+    },
+    {
+     "rank": 3,
+     "level": 36,
+     "effect": 344,
+     "mana": 495
+    },
+    {
+     "rank": 4,
+     "level": 44,
+     "effect": 488,
+     "mana": 645
+    },
+    {
+     "rank": 5,
+     "level": 52,
+     "effect": 656,
+     "mana": 810
+    },
+    {
+     "rank": 6,
+     "level": 60,
+     "effect": 848,
+     "mana": 985
+    }
+   ]
+  },
+  {
+   "id": "mind-flay",
+   "name": "Mind Flay",
+   "icon": "spell_shadow_siphonmana",
+   "kind": "damage-over-time",
+   "ranks": [
+    {
+     "rank": 1,
+     "level": 20,
+     "effect": 63,
+     "mana": 45
+    },
+    {
+     "rank": 2,
+     "level": 28,
+     "effect": 102,
+     "mana": 70
+    },
+    {
+     "rank": 3,
+     "level": 36,
+     "effect": 153,
+     "mana": 100
+    },
+    {
+     "rank": 4,
+     "level": 44,
+     "effect": 225,
+     "mana": 135
+    },
+    {
+     "rank": 5,
+     "level": 52,
+     "effect": 294,
+     "mana": 165
+    },
+    {
+     "rank": 6,
+     "level": 60,
+     "effect": 390,
+     "mana": 205
+    }
+   ]
+  },
+  {
+   "id": "shadow-word-death",
+   "name": "Shadow Word: Death",
+   "iconId": "136149",
+   "kind": "damage",
+   "ranks": [
+    {
+     "rank": 1,
+     "level": 32,
+     "effect": 302,
+     "mana": 175
+    },
+    {
+     "rank": 2,
+     "level": 40,
+     "effect": 379,
+     "mana": 205
+    },
+    {
+     "rank": 3,
+     "level": 48,
+     "effect": 414,
+     "mana": 250
+    },
+    {
+     "rank": 4,
+     "level": 56,
+     "effect": 458,
+     "mana": 340
+    }
+   ]
+  }
+ ]
+}

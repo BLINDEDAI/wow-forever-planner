@@ -1,0 +1,12 @@
+{
+  "source": "talentsforever.com export/priest.json (CC BY 4.0, beta client build 1.60.1.70630 plus 30 Oct 2026 hotfixes) and foreverdb.net; Spanish text translated from the English original",
+  "race": "Gnome",
+  "racials": [
+    { "id": "confounding-flash", "name": "Confounding Flash", "kind": "class-spell", "spellId": 1277455, "iconId": "571554", "level": 10, "details": "3% del maná base · 0,5 seg de lanzamiento · reutilización 2 min", "description": "Confunde hasta a 5 enemigos a menos de 8 yardas durante 3 seg. Cualquier daño recibido rompe el efecto." },
+    { "id": "contingency-plan", "name": "Contingency Plan", "kind": "class-spell", "spellId": 1277462, "iconId": "458722", "level": 20, "details": "Alcance 30 yardas · instantáneo · sin coste de maná · reutilización 10 min · 5 rangos (niveles 20, 30, 40, 50 y 60)", "description": "Coloca una protección Sagrada sobre un aliado durante 30 seg. La próxima vez que reciba daño que deje su salud por debajo del 35%, obtendrá un escudo y se sanará durante 15 seg. Un objetivo solo puede estar afectado por un Contingency Plan. Escudo y sanación por rango: 1 → 155 y 125; 2 → 290 y 200; 3 → 467 y 280; 4 → 596 y 510; 5 → 926 y 670.", "note": "La sanación escala con un 20% de tu poder de hechizo por tic. Toleduck lo recomienda sobre ti mismo: si te pasas con un pull, te escudas y te sanas sin gastar maná." },
+    { "id": "eureka", "name": "Eureka!", "kind": "racial", "spellId": 1259823, "iconId": "4226119", "details": "Instantáneo · reutilización 2 min", "description": "Durante 8 seg, tus habilidades de daño o sanación no periódicas cuestan un 10% menos de maná y hacen un 10% más de daño o sanación.", "note": "Los efectos periódicos no se benefician; un hechizo canalizado no cuenta como periódico." },
+    { "id": "escape-artist", "name": "Escape Artist", "kind": "racial", "spellId": 20589, "iconId": "132309", "details": "Instantáneo · reutilización 2 min", "description": "Te libras al instante de cualquier efecto que reduzca tu movimiento y obtienes inmunidad a esos efectos durante 3 seg." },
+    { "id": "expansive-mind", "name": "Expansive Mind", "kind": "passive", "spellId": 20591, "iconId": "132864", "description": "Aumenta tu maná máximo un 5%." },
+    { "id": "engineering-specialization", "name": "Engineering Specialization", "kind": "passive", "spellId": 20593, "iconId": "134063", "description": "Tu ingenio gnómico reduce un 20% la probabilidad de que los artefactos de ingeniería fallen o te exploten al usarlos." }
+  ]
+}
