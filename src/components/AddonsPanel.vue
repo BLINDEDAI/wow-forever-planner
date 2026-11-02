@@ -13,8 +13,20 @@ function loadDone(): string[] {
   }
 }
 
+const priest = raw.priest
 const done = ref(new Set(loadDone()))
+const copiedMacro = ref('')
 const doneCount = computed(() => raw.steps.filter((step) => done.value.has(step.id)).length)
+
+async function copyMacro(name: string, code: string) {
+  try {
+    await navigator.clipboard.writeText(code)
+    copiedMacro.value = name
+    setTimeout(() => (copiedMacro.value = ''), 2000)
+  } catch {
+    window.prompt('Copia la macro:', code)
+  }
+}
 
 function toggle(id: string) {
   const next = new Set(done.value)
@@ -101,6 +113,40 @@ function toggle(id: string) {
         </ul>
       </article>
     </div>
+
+    <h3 class="tl__heading">{{ priest.title }}</h3>
+    <p class="shop__intro">{{ priest.intro }}</p>
+    <div class="addons__cards">
+      <article v-for="block in priest.blocks" :key="block.id" class="addons__card">
+        <h3>{{ block.title }}</h3>
+        <p class="addons__role">{{ block.text }}</p>
+        <ul>
+          <li v-for="line in block.lines" :key="line">{{ line }}</li>
+        </ul>
+        <p v-if="'warn' in block" class="addons__warn">{{ block.warn }}</p>
+      </article>
+    </div>
+
+    <h3 class="tl__heading">{{ priest.macrosTitle }}</h3>
+    <p class="shop__intro">{{ priest.macrosText }}</p>
+    <div class="addons__macros">
+      <article v-for="macro in priest.macros" :key="macro.name" class="addons__macro">
+        <header>
+          <strong>{{ macro.name }}</strong>
+          <button type="button" class="btn" @click="copyMacro(macro.name, macro.code)">
+            {{ copiedMacro === macro.name ? '¡Copiada!' : 'Copiar' }}
+          </button>
+        </header>
+        <pre><code>{{ macro.code }}</code></pre>
+      </article>
+    </div>
+
+    <article class="addons__card addons__card--wide">
+      <h3>{{ priest.naowhTitle }}</h3>
+      <ul>
+        <li v-for="line in priest.naowh" :key="line">{{ line }}</li>
+      </ul>
+    </article>
 
     <details class="bonus__more">
       <summary>Consejos y avisos</summary>

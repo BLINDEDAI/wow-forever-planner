@@ -2124,3 +2124,45 @@ button:disabled {
     align-items: flex-start;
   }
 }
+
+.addons__warn {
+  margin: 10px 0 0;
+  color: var(--danger);
+  font-size: 0.82rem;
+}
+
+.addons__card--wide {
+  margin-top: 12px;
+}
+
+.addons__macros {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 10px;
+}
+
+.addons__macro {
+  min-width: 0;
+  padding: 10px 14px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--edge);
+  border-left: 3px solid var(--silver);
+  border-radius: 10px;
+}
+
+.addons__macro header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.addons__macro pre {
+  margin: 0;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  color: var(--silver);
+  font-size: 0.8rem;
+  line-height: 1.5;
+}

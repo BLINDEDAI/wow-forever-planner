@@ -140,6 +140,97 @@
       "text": "/nfbis y /nfjournal sustituyen a GearQuest Forever, que según el autor ocupa unos 400 MB de memoria."
     }
   ],
+  "priest": {
+    "title": "Setup para tu Priest",
+    "intro": "Los perfiles de Broog traen lo general, pero no tus hechizos: él mismo deja fuera el gestor de reutilizaciones porque cada clase tiene los suyos. Esto es lo que tienes que añadir tú, en el orden en que conviene hacerlo. Son sugerencias mías a partir de los datos de esta página, no ajustes oficiales.",
+    "blocks": [
+      {
+        "id": "bars",
+        "title": "Barras de acción",
+        "text": "Coloca las barras una vez y no las toques. Tres bloques, de más a menos a mano:",
+        "lines": [
+          "Siempre a mano: Power Word: Shield, Shadow Word: Pain, Mind Blast, Smite (sobre todo al principio), Shoot (la varita) y Fade.",
+          "Con el nivel: Shadow Word: Death (nivel 32), Mind Flay y Devouring Plague. En Shadowform (nivel 40) las pones en la misma barra.",
+          "Sanación y utilidad: Lesser Heal, Renew, Heal, Flash Heal, Dispel Magic, Psychic Scream y los dos hechizos de gnomo (Confounding Flash y Contingency Plan).",
+          "Buffs fuera de combate (Power Word: Fortitude, Inner Fire, Divine Spirit): en una barra que solo se muestre al pasar el ratón, para no ensuciar la pantalla."
+        ]
+      },
+      {
+        "id": "clickcast",
+        "title": "Click-casting para sanar (mazmorras)",
+        "text": "En los marcos de grupo puedes asignar un hechizo a cada tecla o botón del ratón sobre el aliado, y el vídeo de Ellesmere UI enseña que se puede elegir el rango concreto. Propuesta partiendo de lo que recomienda Toleduck:",
+        "lines": [
+          "Clic izquierdo: Lesser Heal rango 3.",
+          "Clic derecho: Renew rango 1.",
+          "Mayús + clic izquierdo: Flash Heal (emergencias).",
+          "Mayús + clic derecho: Power Word: Shield.",
+          "Ctrl + clic izquierdo: Heal rango más alto, para cuando necesites sanar mucho.",
+          "Ctrl + clic derecho: Dispel Magic."
+        ],
+        "warn": "Kunen avisa de que Blizzard parece no querer que se juegue con rangos bajos (al mago le quitaron Frostbolt rango 1 en el torneo de duelos). Si lo cambian en el lanzamiento, esta tabla dejará de servir. Comprueba el día 4 que el juego te deja elegir el rango."
+      },
+      {
+        "id": "buffs",
+        "title": "Recordatorios de buffs",
+        "text": "En Ellesmere UI se añaden con el ID del hechizo (con \"mostrar ID de hechizo\" activado en las descripciones emergentes lo ves pasando el ratón). Para quitar un aviso, clic con el botón central. Los IDs vienen de los datos de Classic y de ForeverDB; verifica cada uno con el tooltip del juego.",
+        "lines": [
+          "Power Word: Fortitude: rangos 1 a 4 = 1243, 1244, 1245, 2791; rangos 5 y 6 = 10937 y 10938.",
+          "Inner Fire: rangos 1 a 6 = 588, 7128, 602, 1006, 10951, 10952.",
+          "Divine Spirit (hechizo de entrenador desde el 30): rangos 1 a 3 = 14752, 14818, 14819; rango 4 = 27841.",
+          "Weakened Soul (el debuff que te impide reescudar a alguien): 6788."
+        ]
+      },
+      {
+        "id": "cooldowns",
+        "title": "Gestor de reutilizaciones: qué seguir",
+        "text": "Pon aquí solo lo que tiene enfriamiento o duración y quieres ver sin mirar las barras:",
+        "lines": [
+          "Daño: Mind Blast, Shadow Word: Death y Shadow Word: Pain en el objetivo (tu daño por segundo depende de que no caduque).",
+          "Spirit Tap: el aura que sale al matar, dura 15 segundos y es el momento de dejar de gastar maná (técnica que explica Kunen).",
+          "Defensa: Fade, Psychic Scream, Power Word: Shield y Weakened Soul.",
+          "De gnomo: Confounding Flash (2 min), Contingency Plan (10 min, 1277456 a 1277460 según rango) y Eureka! (2 min, 1259823)."
+        ]
+      },
+      {
+        "id": "frames",
+        "title": "Marcos y placas de nombre",
+        "text": "Los dos ajustes que cambian según vayas sanando o haciendo daño:",
+        "lines": [
+          "Sanando: marcos de grupo grandes y cerca del centro, con barras de vida sin color de clase (según Broog es más fácil ver quién baja).",
+          "Haciendo daño o en solitario: marcos de banda pequeños en una esquina y el medidor de recurso (maná) bien visible en el centro, junto al gestor de reutilizaciones.",
+          "Placas de nombre apiladas activadas, para no solaparlas en pulls grandes (importante con Shadow Word: Pain a tres objetivos).",
+          "En el marco del objetivo, muestra solo tus propios debuffs: Pain y Devouring Plague."
+        ]
+      }
+    ],
+    "macrosTitle": "Macros de un solo botón",
+    "macrosText": "La idea de Kunen: un botón que cura si apuntas a un aliado y ataca si apuntas a un enemigo. Uso la sintaxis normal de macros de WoW, pero no la he podido probar en Forever; /nfmacros (Naowh Forever) trae macros inteligentes ya hechas como alternativa.",
+    "macros": [
+      {
+        "name": "Sanar o atacar",
+        "code": "#showtooltip\n/cast [@mouseover,help,nodead][help,nodead] Renew(Rank 1); [harm,nodead] Shadow Word: Pain"
+      },
+      {
+        "name": "Escudo al ratón o a ti",
+        "code": "#showtooltip\n/cast [@mouseover,help,nodead][@player] Power Word: Shield"
+      },
+      {
+        "name": "Varita",
+        "code": "#showtooltip\n/cast !Shoot"
+      },
+      {
+        "name": "Mind Flay sin solaparse",
+        "code": "#showtooltip\n/cast [nochanneling:Mind Flay] Mind Flay"
+      }
+    ],
+    "naowhTitle": "Naowh Forever para Priest",
+    "naowh": [
+      "Lista BiS: elige Priest de Sombras o Disciplina y ajusta los pesos de estadísticas. Orden de tus fuentes: poder de hechizo / daño de Sombras primero (AwesomeSP), espíritu segundo; Kunen pone el espíritu primero.",
+      "Planificador de entrenamiento (/nftraining): te dice qué hechizos te faltan en cada nivel y cuánto oro necesitas. Contrástalo con la lista \"Hechizos: qué comprar\" de esta página.",
+      "No pulses \"actualizar barras\" si quieres mantener rangos bajos de sanación.",
+      "Contingency Plan sobre ti mismo y sin coste de maná: ponlo en las barras con el aviso de recarga en el cursor."
+    ]
+  },
   "caveats": [
     "Los perfiles se exportaron en la beta con Naowh Forever 1.1.37 y el 20-22 de octubre; hoy están las versiones 1.1.53 y 9.7.2. Nadie puede probarlos hasta que el juego abra el 4 de noviembre, así que puede haber pequeños desajustes.",
     "Importar un perfil sobrescribe lo que tengas configurado. Si ya has personalizado algo, expórtalo antes.",
