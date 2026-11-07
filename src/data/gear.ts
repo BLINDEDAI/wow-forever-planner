@@ -20,6 +20,9 @@ export interface GearEntry {
   alternatives?: [number, number][]
   enchant?: string
   enchantUpgradeLevel?: number
+  /** For crafted items: where the recipe comes from. */
+  recipe?: string
+  recipeKind?: string
 }
 
 export interface GearItem {
@@ -33,6 +36,8 @@ export interface AlternativeSource {
   text: string
   kind: string
   faction?: 'Horde' | 'Alliance'
+  recipe?: string
+  recipeKind?: string
 }
 
 export interface GearSlot {

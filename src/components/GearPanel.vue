@@ -48,8 +48,14 @@ const sliderFill = computed(
     <p class="shop__intro">
       Mejor objeto para cada hueco según tu nivel, calculado por
       <a href="https://foreverdb.net/bis/priest/shadow" target="_blank" rel="noopener noreferrer">ForeverDB</a>
-      en modo subida de nivel con datos de la beta. La puntuación es de su cálculo, no un dato del juego, y varias
-      fuentes todavía no se conocen: mira siempre la dificultad antes de ir a por algo.
+      en modo subida de nivel. La puntuación es de su cálculo, no un dato del juego, y varias fuentes todavía no se
+      conocen: mira siempre la dificultad antes de ir a por algo.
+    </p>
+    <p class="shop__intro">
+      Ojo con lo fabricado: tener la profesión no basta, hace falta la receta. Muchas se compran con
+      <strong>Merchant's Favor</strong>, una moneda nueva de Forever que se gana llenando y entregando cajas del mundo
+      (en Alianza, en el campamento de Three Corners, Redridge Mountains). De otras todavía no se sabe dónde salen.
+      Cada pieza fabricada indica de dónde sale su receta.
     </p>
 
     <label class="gear__level">
@@ -98,11 +104,17 @@ const sliderFill = computed(
 
           <p class="gear__stats">{{ slot.entry.stats }}</p>
           <p class="gear__source">{{ slot.entry.source }}</p>
+          <p v-if="slot.entry.recipe" class="gear__source gear__recipe" :class="{ 'gear__recipe--unknown': slot.entry.recipeKind === 'unknown' }">
+            {{ slot.entry.recipe }}
+          </p>
           <p class="gear__effort">
             <span class="gear__badge">{{ difficultyLabel[slot.entry.difficulty] }}</span>
             {{ slot.entry.effort }}
           </p>
-          <p v-if="slot.entry.difficulty === 'hard' && slot.alternatives.length" class="gear__warn">
+          <p v-if="slot.entry.recipeKind === 'unknown' && slot.alternatives.length" class="gear__warn">
+            Nadie sabe aún dónde conseguir su receta: mira las alternativas.
+          </p>
+          <p v-else-if="slot.entry.difficulty === 'hard' && slot.alternatives.length" class="gear__warn">
             Casi imposible de conseguir a tiempo: mira las alternativas.
           </p>
           <p v-if="slot.entry.faction === 'Horde'" class="gear__warn">
@@ -126,6 +138,9 @@ const sliderFill = computed(
                 <em :title="`Un ${alt.percent}% peor que la primera opción`">−{{ alt.percent }}%</em>
                 <span v-if="alt.source" :class="{ 'gear__alts-warn': alt.source.faction === 'Horde' }">
                   {{ alt.source.text }}
+                </span>
+                <span v-if="alt.source?.recipe" :class="{ 'gear__alts-warn': alt.source.recipeKind === 'unknown' }">
+                  {{ alt.source.recipe }}
                 </span>
               </div>
             </li>

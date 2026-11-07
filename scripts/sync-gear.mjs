@@ -265,6 +265,109 @@ const missing = [...usedIds].filter((id) => !items[id])
 if (missing.length) console.warn('Items missing from the dataset:', missing.join(', '))
 if (unparsed) console.warn(`${unparsed} entries could not be parsed`)
 
+// ForeverDB says "learn it at skill N" for crafted items, but a recipe is often a pattern sold for a
+// Forever-only currency, dropped, or of unknown origin. Look the pattern up so the page says so.
+const patternsByName = new Map()
+for (const it of dataset) {
+  const m = it.n.match(/^(?:Pattern|Plans|Formula|Schematic|Recipe): (.+)$/)
+  if (m) (patternsByName.get(m[1]) ?? patternsByName.set(m[1], []).get(m[1])).push(it.id)
+}
+
+function recipeSource(html) {
+  const vendors = html.match(/<h2>Sold by<\/h2><ul class="ssr-list">([\s\S]*?)<\/ul>/)?.[1]
+  if (vendors) {
+    const rows = [...vendors.matchAll(/<li>([\s\S]*?)<\/li>/g)]
+      .map((m) => decode(m[1].replace(/<[^>]+>/g, '')))
+      .map((t) => t.match(/^(.+?), (.+?) \((Alliance|Horde|Neutral)\): (.+?)(?: \(([^)]*)\))?$/))
+      .filter(Boolean)
+    const mine = rows.find((r) => r[3] !== 'Horde')
+    if (!mine) return { kind: 'vendor', faction: 'Horde', text: 'Receta: solo la vende un vendedor de Horda' }
+    const favor = /Merchant's Favor/.test(mine[4])
+    const price = mine[4].replace(/(\d+) Merchant's Favor/, "$1 Merchant's Favor")
+    return {
+      kind: favor ? 'favor' : 'vendor',
+      text: `Receta: se compra a ${mine[1]} en ${mine[2]} por ${price}${confidence(mine[5])}`,
+    }
+  }
+  const src = alternativeSource(html)
+  const unknown = src.kind === 'unknown'
+  return { kind: src.kind, text: unknown ? 'Receta: todavía no se sabe dónde se consigue' : `Receta: ${src.text[0].toLowerCase()}${src.text.slice(1)}` }
+}
+
+const RECIPE_EFFORT = {
+  favor: "receta comprada con Merchant's Favor (moneda de las cajas del mundo)",
+  vendor: 'comprar la receta a un vendedor',
+  unknown: 'receta de origen desconocido: puede que aún no se pueda conseguir',
+  quest: 'receta de una misión',
+  world: 'receta de botín aleatorio',
+  container: 'receta dentro de un cofre',
+  drop: 'receta de botín de enemigos',
+}
+
+const recipeCache = new Map()
+async function recipeFor(name) {
+  if (recipeCache.has(name)) return recipeCache.get(name)
+  const patterns = patternsByName.get(name)
+  let recipe
+  if (!patterns) {
+    recipe = { kind: 'trainer', text: 'Receta: se aprende en un entrenador de la profesión (no hay patrón como objeto)' }
+  } else {
+    recipe = recipeSource(await fetchText(`${BASE}/item/${patterns[0]}`, `item_${patterns[0]}.html`))
+  }
+  recipeCache.set(name, recipe)
+  return recipe
+}
+
+function recipeDifficulty(recipe) {
+  if (recipe.kind === 'unknown') return 'unknown'
+  if (recipe.kind === 'trainer') return null
+  const chance = Number(recipe.text.match(/, ([\d,]+)%/)?.[1].replace(',', '.'))
+  return Number.isFinite(chance) && chance < 5 ? 'hard' : 'some'
+}
+
+for (const slots of Object.values(specs)) {
+  for (const runs of Object.values(slots)) {
+    for (const [, , entry] of runs) {
+      if (entry.kind !== 'crafted') continue
+      const recipe = await recipeFor(items[entry.id].name)
+      entry.recipe = recipe.text
+      entry.recipeKind = recipe.kind
+      const difficulty = recipeDifficulty(recipe)
+      if (difficulty) {
+        entry.difficulty = difficulty
+        entry.effort = RECIPE_EFFORT[recipe.kind] ?? entry.effort
+      }
+    }
+  }
+}
+for (const [id, src] of Object.entries(alternativeSources)) {
+  if (src.kind !== 'crafted') continue
+  const recipe = await recipeFor(items[id].name)
+  src.recipe = recipe.text
+  src.recipeKind = recipe.kind
+}
+const recipeKinds = {}
+for (const r of recipeCache.values()) recipeKinds[r.kind] = (recipeKinds[r.kind] ?? 0) + 1
+console.log('recipes', recipeCache.size, recipeKinds)
+
+// Keep the item icons next to the page so it works offline and without hotlinking.
+const iconDir = join(root, 'public/gear-icons')
+mkdirSync(iconDir, { recursive: true })
+let iconsFetched = 0
+for (const icon of new Set(Object.values(items).map((it) => it.icon))) {
+  const file = join(iconDir, `${icon}.webp`)
+  if (existsSync(file)) continue
+  const res = await fetch(`${BASE}/icons/${icon}.webp`)
+  if (!res.ok) {
+    console.warn(`Icon ${icon} not available (${res.status})`)
+    continue
+  }
+  writeFileSync(file, Buffer.from(await res.arrayBuffer()))
+  iconsFetched++
+  await sleep(100)
+}
+if (iconsFetched) console.log('icons downloaded', iconsFetched)
+
 const out = {
   source: 'ForeverDB best in slot (foreverdb.net/bis/priest), leveling mode, levels 10-60; provisional beta data',
   specs,

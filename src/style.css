@@ -2166,3 +2166,7 @@ button:disabled {
   font-size: 0.8rem;
   line-height: 1.5;
 }
+
+.gear__recipe--unknown {
+  color: var(--danger);
+}
