@@ -1,5 +1,5 @@
 {
-  "source": "AwesomeSP, \"[WoW Forever] Priest Leveling Guide 1-60\" (youtube.com/watch?v=wVU59PWpeMc), sección Bonus (desde 2:01:39); opinión del autor sobre la beta, no datos oficiales. Valores de Legacy de talentsforever.com (CC BY 4.0). Consejos de sanación con rangos bajos de Toleduck (youtube.com/watch?v=bNPJLjob1js, 29 Oct 2026). Datos de rangos bajos, velocidad de subida, sanadores a nivel 60 y pesos de estadísticas de una hoja de cálculo pública de la comunidad (docs.google.com/spreadsheets/d/19SaCaDQJzhMFL-nIW4ryzFwI53FmsnDvaxRfLbvM-CE), hecha con la beta y no oficial.",
+  "source": "AwesomeSP, \"[WoW Forever] Priest Leveling Guide 1-60\" (youtube.com/watch?v=wVU59PWpeMc), sección Bonus (desde 2:01:39); opinión del autor sobre la beta, no datos oficiales. Valores de Legacy de talentsforever.com (CC BY 4.0). Consejos de sanación con rangos bajos de Toleduck (youtube.com/watch?v=bNPJLjob1js, 29 Oct 2026). Datos de rangos bajos, velocidad de subida, sanadores a nivel 60 y pesos de estadísticas de una hoja de cálculo pública de la comunidad (docs.google.com/spreadsheets/d/19SaCaDQJzhMFL-nIW4ryzFwI53FmsnDvaxRfLbvM-CE), hecha con la beta y no oficial. Doble especialización, rangos bajos a nivel 60 y equipo de DoubleZug (youtube.com/watch?v=Bw5buUrWygQ y youtube.com/watch?v=P0yLYFdG4K8).",
   "sheet": "https://docs.google.com/spreadsheets/d/19SaCaDQJzhMFL-nIW4ryzFwI53FmsnDvaxRfLbvM-CE",
   "video": "https://www.youtube.com/watch?v=wVU59PWpeMc",
   "video2": "https://www.youtube.com/watch?v=bNPJLjob1js",
@@ -225,9 +225,26 @@
         "Aprovecha la regla de los 5 segundos: con Prayer of Mending rebotando y Renew en cuatro compañeros no hace falta sanar a quien está al 60%; espera a recuperar maná.",
         "El escudo y Flash Heal, solo para picos de daño. El escudo sobre el tanque antes del pull evita, según el autor, que le hagan daze.",
         "Usa mouseover (ya viene en el interfaz) para la varita y las disipaciones. Antes del nivel 36 solo disipas un efecto cada vez, así que elige el momento.",
-        "Cuidado: una hoja de cálculo de la comunidad (hecha con la beta, solo hasta nivel 30) concluye que Forever no usa la fórmula de Vanilla ni la de TBC para los rangos bajos, y sospecha un sistema que los penaliza más cuanto más subes. Con 500 de poder de hechizo y a nivel 60, Renew rangos 1 a 3 no recibe nada del poder de hechizo, el rango 4 un 20%, el 5 un 50%, el 6 un 80% y desde el 7 el 100%.",
-        "El coste de maná no baja con el rango bajo, así que a niveles altos el ahorro desaparece. Los rangos bajos siguen sirviendo para aplicar ralentizaciones y debuffs. Hasta el 30 la técnica parece funcionar; hacia el 40 no hay datos: pruébalo y comprueba cuánto sana de verdad cada rango.",
+        "Una hoja de cálculo de la comunidad, hecha con la beta, sospechaba que los rangos bajos acabarían sin nada de poder de hechizo. DoubleZug lo comprobó a nivel 60 y no es así: el coeficiente baja un 5% por nivel a partir de unos 18 niveles por debajo del máximo y se detiene en alrededor del 10% del coeficiente base. Para Renew, que tiene un coeficiente base de 1, el mínimo es 0,1.",
+        "Sus conclusiones: a niveles bajos, sanar con rangos bajos es muy potente; a nivel 60 pierde fuerza pero no desaparece, y para sanar de verdad casi no se usa el rango 1. Lo que sí sigue valiendo es usarlo para activar efectos (ver abajo). No hay datos de cómo se comporta justo en el 40, así que comprueba cuánto sana de verdad cada rango.",
+        "Cambio importante de justo antes del lanzamiento: los hechizos de rango bajo ya no tienen penalización para activar talentos. Un Holy Fire rango 1 activa Searing Light con el 100% de probabilidad, y lo mismo vale para Inspiration al criticar.",
+        "Los hechizos de daño parecen escalar mucho más con el poder de hechizo que los de sanación (lo vio a ojo con un Shadow Word: Pain de rango 1, sin medirlo). Rellenar huecos con Holy Fire rango 1 para sacar procs de Searing Light es una de sus ideas.",
+        "Fallo visual: dentro de las mazmorras, el texto de combate, el registro y las descripciones de los hechizos de rango bajo pueden mostrar mucha más sanación de la real, y al salir vuelven a ser correctos. No te fíes de esos números dentro de una instancia.",
+        "El addon Forever Rank muestra el maná por punto de sanación (HPM) de cada rango en la descripción del hechizo, para ver rápido qué rangos son eficientes. Tiene pocas descargas.",
         "Kunen avisa además de que Blizzard parece querer limitarlo (al mago le quitaron Frostbolt rango 1 en el torneo de duelos). No construyas tu forma de sanar solo sobre esto."
+      ]
+    },
+    {
+      "id": "dual-spec",
+      "title": "Doble especialización para curar mazmorras (desde el 40)",
+      "items": [
+        "Compra antes la montura: con una subida con Meditation ya curas mazmorras sin doble especialización. Después, la doble especialización, y con oro de sobra, el encantamiento Insight.",
+        "Híbrido Disciplina/Sagrado hacia el 45, el que recomienda a casi todos: Meditation e Inner Focus de Disciplina, y de Sagrado Improved Renew, Twilight Focus (el 70% de no perder el lanzamiento), Divine Fury, Holy Nova y Searing Light, con Spirit Tap.",
+        "Sagrado a fondo: el más potente por Prayer of Mending (sin él, entre un 20% y un 22% menos de sanación), pero Meditation no llega hasta el 53. Disciplina a fondo, no la recomienda: Penance se debilitó un 60% en la beta y Power Infusion deja la sanación un 35% por debajo.",
+        "Prayer of Mending se puede forzar a rebotar curando a quien lo tiene con un Lesser Heal rango 1: tres rebotes sobre el tanque por muy poco maná.",
+        "Spirit Tap: remata enemigos con la varita o con Shadow Word: Death rango 1 (unos 175 de maná). Con dos remates por minuto, entre un 9% y un 12% más de sanación a nivel 60.",
+        "Insight es un encantamiento de arma que duplica el espíritu durante 10 segundos con bastante probabilidad. Cuesta unos 5 de oro y lo vende un vendedor de reputación de las cajas del mundo. Lo considera mejor que el de +100 de poder de hechizo a dos manos en peleas largas, y avisa de que podrían debilitarlo.",
+        "Es teoría de una sola persona con valores de la beta; el coste de cada cambio de talentos aún no es oficial."
       ]
     },
     {
@@ -254,7 +271,8 @@
       "items": [
         "Tomando el poder de sanación como 1, la misma hoja da estos pesos: espíritu 1,39, maná cada 5 segundos 2,09 e intelecto 0,83. Puedes usarlos como pesos en la lista BiS de Naowh Forever si vas a sanar.",
         "Para la raza, el modelo da al gnomo una mejora de sanación de en torno al 3% (maná máximo +5% y Eureka!), casi igual que el elfo de la noche (3,5%). El humano sale mejor, con un 6%.",
-        "Existe un simulador para Forever, a nivel 60: wowsims.com/forever/priest/healer."
+        "Existe un simulador para Forever, a nivel 60: wowsims.com/forever/priest/healer.",
+        "Equipo de sanación a nivel 60 (según DoubleZug): un conjunto asequible, de azules de mazmorra, queda solo un 2-3% por debajo de uno con objetos caros que se intercambian, y alrededor de un 8% de uno con todo, incluido el set de mazmorra 0,5, que exige una cadena de misiones larguísima. Para casi todos, lo asequible es suficiente."
       ]
     },
     {

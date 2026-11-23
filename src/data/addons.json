@@ -167,7 +167,7 @@
           "Ctrl + clic izquierdo: Heal rango más alto, para cuando necesites sanar mucho.",
           "Ctrl + clic derecho: Dispel Magic."
         ],
-        "warn": "Kunen avisa de que Blizzard parece no querer que se juegue con rangos bajos (al mago le quitaron Frostbolt rango 1 en el torneo de duelos). Si lo cambian en el lanzamiento, esta tabla dejará de servir. Además, una hoja de cálculo de la comunidad sospecha que los rangos bajos se penalizan más cuanto más subes de nivel. Comprueba que el juego te deja elegir el rango y cuánto sana cada uno."
+        "warn": "Kunen avisa de que Blizzard parece no querer que se juegue con rangos bajos (al mago le quitaron Frostbolt rango 1 en el torneo de duelos). Si lo cambian en el lanzamiento, esta tabla dejará de servir. Además, los rangos bajos pierden poder de hechizo al subir de nivel (no llegan a cero: se quedan en torno al 10% del coeficiente base, según DoubleZug a nivel 60), y dentro de las mazmorras los números que ves de esos hechizos pueden ser engañosos. Comprueba que el juego te deja elegir el rango y cuánto sana cada uno."
       },
       {
         "id": "buffs",
