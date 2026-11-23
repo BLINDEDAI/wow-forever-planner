@@ -41,6 +41,8 @@ function iconSrc(item: BonusItem): string {
         <a :href="bonus.video" target="_blank" rel="noopener noreferrer">AwesomeSP</a>
         y
         <a :href="bonus.video2" target="_blank" rel="noopener noreferrer">Toleduck</a>
+        y una
+        <a :href="bonus.sheet" target="_blank" rel="noopener noreferrer">hoja de cálculo de la comunidad</a>
         sobre la beta, no datos oficiales
       </span>
     </header>

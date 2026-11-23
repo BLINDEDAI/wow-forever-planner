@@ -167,7 +167,7 @@
           "Ctrl + clic izquierdo: Heal rango más alto, para cuando necesites sanar mucho.",
           "Ctrl + clic derecho: Dispel Magic."
         ],
-        "warn": "Kunen avisa de que Blizzard parece no querer que se juegue con rangos bajos (al mago le quitaron Frostbolt rango 1 en el torneo de duelos). Si lo cambian en el lanzamiento, esta tabla dejará de servir. Comprueba el día 4 que el juego te deja elegir el rango."
+        "warn": "Kunen avisa de que Blizzard parece no querer que se juegue con rangos bajos (al mago le quitaron Frostbolt rango 1 en el torneo de duelos). Si lo cambian en el lanzamiento, esta tabla dejará de servir. Además, una hoja de cálculo de la comunidad sospecha que los rangos bajos se penalizan más cuanto más subes de nivel. Comprueba que el juego te deja elegir el rango y cuánto sana cada uno."
       },
       {
         "id": "buffs",
@@ -225,7 +225,7 @@
     ],
     "naowhTitle": "Naowh Forever para Priest",
     "naowh": [
-      "Lista BiS: elige Priest de Sombras o Disciplina y ajusta los pesos de estadísticas. Orden de tus fuentes: poder de hechizo / daño de Sombras primero (AwesomeSP), espíritu segundo; Kunen pone el espíritu primero.",
+      "Lista BiS: elige Priest de Sombras o Disciplina y ajusta los pesos de estadísticas. Orden de tus fuentes: poder de hechizo / daño de Sombras primero (AwesomeSP), espíritu segundo; Kunen pone el espíritu primero. Si vas a sanar, una hoja de la comunidad da pesos a nivel 60 (poder de sanación 1, espíritu 1,39, maná cada 5 seg 2,09, intelecto 0,83).",
       "Planificador de entrenamiento (/nftraining): te dice qué hechizos te faltan en cada nivel y cuánto oro necesitas. Contrástalo con la lista \"Hechizos: qué comprar\" de esta página.",
       "No pulses \"actualizar barras\" si quieres mantener rangos bajos de sanación.",
       "Contingency Plan sobre ti mismo y sin coste de maná: ponlo en las barras con el aviso de recarga en el cursor."

@@ -1,5 +1,6 @@
 {
-  "source": "AwesomeSP, \"[WoW Forever] Priest Leveling Guide 1-60\" (youtube.com/watch?v=wVU59PWpeMc), sección Bonus (desde 2:01:39); opinión del autor sobre la beta, no datos oficiales. Valores de Legacy de talentsforever.com (CC BY 4.0). Consejos de sanación con rangos bajos de Toleduck (youtube.com/watch?v=bNPJLjob1js, 29 Oct 2026).",
+  "source": "AwesomeSP, \"[WoW Forever] Priest Leveling Guide 1-60\" (youtube.com/watch?v=wVU59PWpeMc), sección Bonus (desde 2:01:39); opinión del autor sobre la beta, no datos oficiales. Valores de Legacy de talentsforever.com (CC BY 4.0). Consejos de sanación con rangos bajos de Toleduck (youtube.com/watch?v=bNPJLjob1js, 29 Oct 2026). Datos de rangos bajos, velocidad de subida, sanadores a nivel 60 y pesos de estadísticas de una hoja de cálculo pública de la comunidad (docs.google.com/spreadsheets/d/19SaCaDQJzhMFL-nIW4ryzFwI53FmsnDvaxRfLbvM-CE), hecha con la beta y no oficial.",
+  "sheet": "https://docs.google.com/spreadsheets/d/19SaCaDQJzhMFL-nIW4ryzFwI53FmsnDvaxRfLbvM-CE",
   "video": "https://www.youtube.com/watch?v=wVU59PWpeMc",
   "video2": "https://www.youtube.com/watch?v=bNPJLjob1js",
   "dungeon": {
@@ -50,7 +51,7 @@
                   "icon": "spell_holy_renew"
                 }
               ],
-              "caption": "Rangos bajos: casi no cuestan maná"
+              "caption": "Rangos bajos: ahorran maná, pero hay dudas (ver abajo)"
             }
           ]
         },
@@ -223,7 +224,37 @@
         "Renew rango 1 cuesta 30 de maná; el rango 4 (nivel 26) cuesta 140 para sanar 160. Con el equipo nuevo, el rango 1 sana bastante más de lo que dice su tooltip.",
         "Aprovecha la regla de los 5 segundos: con Prayer of Mending rebotando y Renew en cuatro compañeros no hace falta sanar a quien está al 60%; espera a recuperar maná.",
         "El escudo y Flash Heal, solo para picos de daño. El escudo sobre el tanque antes del pull evita, según el autor, que le hagan daze.",
-        "Usa mouseover (ya viene en el interfaz) para la varita y las disipaciones. Antes del nivel 36 solo disipas un efecto cada vez, así que elige el momento."
+        "Usa mouseover (ya viene en el interfaz) para la varita y las disipaciones. Antes del nivel 36 solo disipas un efecto cada vez, así que elige el momento.",
+        "Cuidado: una hoja de cálculo de la comunidad (hecha con la beta, solo hasta nivel 30) concluye que Forever no usa la fórmula de Vanilla ni la de TBC para los rangos bajos, y sospecha un sistema que los penaliza más cuanto más subes. Con 500 de poder de hechizo y a nivel 60, Renew rangos 1 a 3 no recibe nada del poder de hechizo, el rango 4 un 20%, el 5 un 50%, el 6 un 80% y desde el 7 el 100%.",
+        "El coste de maná no baja con el rango bajo, así que a niveles altos el ahorro desaparece. Los rangos bajos siguen sirviendo para aplicar ralentizaciones y debuffs. Hasta el 30 la técnica parece funcionar; hacia el 40 no hay datos: pruébalo y comprueba cuánto sana de verdad cada rango.",
+        "Kunen avisa además de que Blizzard parece querer limitarlo (al mago le quitaron Frostbolt rango 1 en el torneo de duelos). No construyas tu forma de sanar solo sobre esto."
+      ]
+    },
+    {
+      "id": "leveling-speed",
+      "title": "Qué especialización sube más rápido (nivel 28)",
+      "items": [
+        "Test de un jugador de la comunidad a nivel 28, matando entre 14 y 25 enemigos por prueba, así que es un dato orientativo, no una conclusión. Experiencia por segundo contra enemigos de tu nivel: Disciplina con Meditation y daño a varios objetivos, 5,76; Shadow con un solo objetivo, 5,52; Shadow a varios, 5,46; Disciplina solo con Smite, 5,11; Sagrado solo con Smite, 4,43.",
+        "Contra enemigos verdes (unos cuatro niveles por debajo) la ventaja de Disciplina sube: Shadow sale entre un 9% y un 11% más lenta.",
+        "Encaja con subir como Disciplina y decidir en el 40, pero no dice nada de después: el test no llega a Shadowform ni a niveles más altos."
+      ]
+    },
+    {
+      "id": "healers-60",
+      "title": "Sanadores a nivel 60 (modelo teórico)",
+      "items": [
+        "Combate de 3 minutos en banda, con buffs y sin consumibles, rangos máximos. Sanación efectiva por segundo: druida 945, Sagrado con Prayer of Mending rebotando 5 veces 930, chamán 778, Disciplina curando al tanque con Power Infusion 561, paladín 475.",
+        "Orden por tipo de sanación en banda: druida, Sagrado, Disciplina o chamán, paladín. Sanar a un tanque concreto: chamán, Disciplina, Sagrado, druida, paladín.",
+        "Conclusión del autor: en banda, Sagrado rinde bastante más que Disciplina, que está pensada para sanar tanques. Son cálculos de una persona, con valores sin confirmar, y todavía no hay nadie en el 60."
+      ]
+    },
+    {
+      "id": "healing-stats",
+      "title": "Estadísticas para sanar a nivel 60",
+      "items": [
+        "Tomando el poder de sanación como 1, la misma hoja da estos pesos: espíritu 1,39, maná cada 5 segundos 2,09 e intelecto 0,83. Puedes usarlos como pesos en la lista BiS de Naowh Forever si vas a sanar.",
+        "Para la raza, el modelo da al gnomo una mejora de sanación de en torno al 3% (maná máximo +5% y Eureka!), casi igual que el elfo de la noche (3,5%). El humano sale mejor, con un 6%.",
+        "Existe un simulador para Forever, a nivel 60: wowsims.com/forever/priest/healer."
       ]
     },
     {
